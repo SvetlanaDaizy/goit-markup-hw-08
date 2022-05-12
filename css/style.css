@@ -1,0 +1,93 @@
+/* Палитра  */
+
+/* цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет фона #ffffff */
+/* цвет акцента: #2196F3 */
+ :root {
+     --base-text-color: #212121;
+     --title-text-color: #212121; 
+     --accent-color: #2196F3;
+     --hero-color: #ffffff;
+ }
+
+.page {
+    background-color: #ffffff;
+    color: var(--base-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+ /* header */
+ 
+.logo {
+    color: var(--base-text-color);
+}
+
+.logo-span {
+    color: var(--accent-color);
+}
+
+.site-nav {
+    color: var(--base-text-color);
+}
+
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--base-text-color);
+}
+.auth-nav .link {
+    color: var(--accent-color);
+}
+
+.auth-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--base-text-color);
+}
+/* Main */
+/* Hero */
+.hero-title {
+    color: var(--hero-color);
+}
+
+.button {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+.description .title {
+    color: var(--title-text-color);
+}
+
+
+
+
+
+ /* font-family:'Roboto';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 16px;
+ letter-spacing: 0.02em;
+ color:  #212121; */
+
+
+/* 
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+} */
