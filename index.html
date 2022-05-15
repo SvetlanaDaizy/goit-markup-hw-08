@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="page">
+<body>
     <!-- Header -->
     <header>
         <nav>
             <a href="#" class="logo">Web<span class="logo-span">Studio</span></a>
             <ul class="site-nav">
-                <li><a href="./index.html" class="link-current">Студия</a></li>
-                <li><a href="./potfolio.html" class="link">Портфолио</a></li>
+                <li><a href="./index.html" class="link current">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li><a href="#" class="link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="auth-nav">
-            <li><a href="mailto:info@devstudio.com" class="link-current">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="text">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <!-- Main -->
@@ -33,7 +35,7 @@
             <button type="button" class="button">Заказать услугу</button>
         </section>
         <!-- First section  -->
-        <section class="section">
+        <section>
             <h2 class="section-title">Наши преимущества</h2>
             <ul class="description">
                 <li>
@@ -64,27 +66,27 @@
             </ul>
         </section>
         <!-- Third section -->
-        <section class="section">
+        <section class="section team">
             <h2 class="section-title">Наша команда</h2>
             <ul>
                 <li>
                     <img src="./image/f101b0562402f9066520924acac0be8dc7.jpg" alt="Игорь Демьяненко" width="270">
-                    <h3>Игорь Демьяненко</h3>
+                    <h3 class="title">Игорь Демьяненко</h3>
                     <p class="text">Product Designer</p>
                 </li>
                 <li>
                     <img src="./image/f28ed9ff0c05008e3e7ae5285b05efd211.jpg" alt="Ольга Репина" width="270">
-                    <h3>Ольга Репина</h3>
+                    <h3 class="title">Ольга Репина</h3>
                     <p class="text">Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./image/f3c03fb848ed9dfc89543bbe97156c3661.jpg" alt="Николай Тарасов" width="270">
-                    <h3>Николай Тарасов</h3>
+                    <h3 class="title">Николай Тарасов</h3>
                     <p class="text">Marketing</p>
                 </li>
                 <li>
                     <img src="./image/f47ff905b2d5f56aa0d2b29aa48e997cd8.jpg" alt="Михаил Ермаков" width="270">
-                    <h3>Михаил Ермаков</h3>
+                    <h3 class="title">Михаил Ермаков</h3>
                     <p class="text">UI Designer</p>
                 </li>
             </ul>
@@ -94,8 +96,8 @@
 <footer>
     <a href="#" class="logo">Web<span class="logo-span">Studio</span></a>
     <address>
-        <ul class="address">
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
+        <ul>
+            <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
             <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
             <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
         </ul>
