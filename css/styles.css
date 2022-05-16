@@ -23,62 +23,72 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* header */
 
-.logo {
+.logo-header {
     color: var(--accent-color);
 
     font-family: Raleway, sans-serif; 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none;
 }
 
-.logo-span:hover {
-    color: var(--accent-color);
-}
-header .logo-span {
+.logo-header:hover,
+.logo-header:focus {
     color: var(--base-text-color);
 }
 
-.site-nav .link{
+.header-span {
+    color: var(--base-text-color);
+}
+
+.header-span:hover,
+.header-span:focus {
+    color: var(--accent-color);
+}
+
+
+.nav-link {
     color: var(--base-text-color);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
-.site-nav .link:hover {
+.nav-link:hover {
     color: var(--accent-color);
 }
 
-.link.current {
+.current {
     color: var(--accent-color);
 }
 
-.site-nav .link-current:hover,
-.site-nav .link-current:focus {
+.current:hover,
+.current:focus {
     color: var(--base-text-color);
 }
 
-.auth-nav .link {
+
+.auth-link {
     color: var(--text-color);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-link:hover,
+.auth-link:focus {
     color: var(--accent-color);
 }
 
@@ -130,7 +140,6 @@ header .logo-span {
 
 .photo .link {
     color: var(--base-text-color);
-    text-decoration: none;
 }
 
 .photo .title {
@@ -155,6 +164,7 @@ header .logo-span {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+
 }
 
 .description .title {
@@ -178,6 +188,7 @@ header .logo-span {
 
 .team {
     background-color: #F5F4FA;
+    text-align: center;
 }
 
 .section .title {
@@ -186,7 +197,6 @@ header .logo-span {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
 }
 
 .section .text {
@@ -195,7 +205,6 @@ header .logo-span {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
 }
 
 
@@ -205,8 +214,27 @@ footer {
     background-color: var(--accent-background); 
 }
 
-footer .logo-span {
+.logo-footer {
+    color: var(--accent-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
     color: var(--hero-color);
+}
+
+.footer-span {
+    color: var(--hero-color);
+}
+
+.footer-span:hover,
+.footer-span:focus {
+    color: var(--accent-color);
 }
 
 address {
@@ -220,9 +248,13 @@ address {
     color: var(--hero-color);   
 }
 
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+}
+
 address .link {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
 }
 
 address .link:hover,
