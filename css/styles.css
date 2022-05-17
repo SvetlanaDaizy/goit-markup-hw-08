@@ -4,6 +4,10 @@
 /* вторичный цвет текста #757575 */
 /* цвет фона #ffffff */
 /* цвет акцента: #2196F3 */
+
+
+
+
  :root {
      --base-text-color: #212121;
      --accent-color: #2196F3;
@@ -11,6 +15,17 @@
      --text-color: #757575;
      --accent-background: #2F303A;
  }
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--hero-color);
@@ -21,6 +36,9 @@ body {
 
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
@@ -29,6 +47,13 @@ a {
 
 
 /* header */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 2px solid tomato;
+}
 
 .logo-header {
     color: var(--accent-color);
@@ -53,7 +78,6 @@ a {
     color: var(--accent-color);
 }
 
-
 .nav-link {
     color: var(--base-text-color);
 
@@ -76,7 +100,9 @@ a {
     color: var(--base-text-color);
 }
 
-
+.auth {
+    margin: 0;
+}
 .auth-link {
     color: var(--text-color);
 
@@ -86,7 +112,6 @@ a {
     letter-spacing: 0.02em;
 }
 
-
 .auth-link:hover,
 .auth-link:focus {
     color: var(--accent-color);
@@ -94,42 +119,67 @@ a {
 
 
 /* Main */
+
 /* Hero */
 
 .hero {
-    background-color: var(--accent-background);
+    background-color: var(--accent-background); 
+    text-align: center;
+    height: 600px;
+    padding-top: 200px;
 }
 
 .hero-title {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
+
     color: var(--hero-color);
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
+/* buttons */
+
 .button {
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    
     background-color: var(--accent-color);
     color: var(--hero-color);
+    border: 1px solid transparent;
 
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     cursor: pointer;
+    text-align: center;
 }
 
 .filter {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+
     background-color: #F5F4FA;;
     color: var(--base-text-color);
-    font-family: inherit;
+    border: 1px solid transparent;
 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+    text-align: center;
 }
 
 .filter:hover,
@@ -142,6 +192,27 @@ a {
     color: var(--base-text-color);
 }
 
+.section {
+    /* padding-top: 94px; */
+    padding-bottom: 94px;   
+}
+
+/* Portfolio */
+
+.main {
+    background-color: #E5E5E5;
+}
+
+.section-filter {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.section-photo {
+    margin-top: 0;
+    padding-bottom: 94px;
+}
+ 
 .photo .title {
     font-weight: 700;
     font-size: 18px;
@@ -157,18 +228,30 @@ a {
     line-height: 1.9;
 }
 
+/* First section */
+
+.display-none {
+    display: none;
+}
+
+.section.description {
+    padding-top: 94px;
+}
 .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--base-text-color);
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-
 }
 
 .description .title {
     color: var(--base-text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
     
     font-weight: 700;
     font-size: 14px;
@@ -177,11 +260,20 @@ a {
 }
 
 .description .text {
-    color: var(--text-color);
+    color: var(--base-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+}
+
+/* Second section */
+
+.photo .section-title {
+    margin-bottom: 50px;
 }
 
 /* Third section */
@@ -191,7 +283,26 @@ a {
     text-align: center;
 }
 
+.team .section-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.team img {
+    margin-bottom: 30px;
+}
+
+.team .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.team .text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .section .title {
+
     color: var(--base-text-color);
 
     font-weight: 500;
@@ -212,6 +323,12 @@ a {
 
 footer {
     background-color: var(--accent-background); 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer a {
+    display: inline-block;
 }
 
 .logo-footer {
@@ -245,7 +362,8 @@ address {
 }
 
 .address {
-    color: var(--hero-color);   
+    color: var(--hero-color);  
+    margin-top: 20px;
 }
 
 .address:hover,
@@ -255,6 +373,7 @@ address {
 
 address .link {
     color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
 }
 
 address .link:hover,

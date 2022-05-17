@@ -8,38 +8,46 @@
     <title>Web Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
-            <ul class="site-nav">
-                <li><a href="./index.html" class="nav-link">Студия</a></li>
-                <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-                <li><a href="#" class="nav-link">Контакты</a></li>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
+                <ul>
+                    <li><a href="./index.html" class="nav-link">Студия</a></li>
+                    <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+                    <li><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth">
+                <li><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="auth-link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="auth-link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <!-- Main -->
 <main>
-    <section>
-    <h1>Portfolio</h1>
+    <section class="main">
+       
+    <h1 class="display-none">Portfolio</h1>
     <!-- Buttons -->
-    <div>
+    <section class="section-filter">
+    <div class="container">
     <button type="button" class="filter">Все</button>
     <button type="button" class="filter">Веб-сайты</button>
     <button type="button" class="filter">Приложения</button>
     <button type="button" class="filter">Дизайн</button>
     <button type="button" class="filter">Маркетинг</button>
     </div>
+    </section>
     <!-- Photo -->
+    <section class="section-photo"> 
+    <div class="container">
     <ul class="photo">
         <li><a href="#" class="link"><img src="./image/image.portfolio/img(1)(1).jpg" alt="Технокряк" width="370">
         <h2 class="title">Технокряк</h2>
@@ -78,10 +86,13 @@
         <p class="text">Приложение</p></a>
     </li>
     </ul>
+    </div>
+</section>
     </section>
 </main>
     <!-- Footer -->
     <footer>
+        <div class="container">
         <a href="#" class="logo-footer">Web<span class="footer-span">Studio</span></a>
 <address>
     <ul>
@@ -90,6 +101,7 @@
         <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
     </ul>
 </address>
+</div>
     </footer>
 </body>
     

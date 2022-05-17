@@ -8,12 +8,14 @@
     <title>Web Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
+        <div class="container">
         <nav>
             <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
             <ul>
@@ -22,10 +24,11 @@
                 <li><a href="#" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="auth">
             <li><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111" class="auth-link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <!-- Main -->
     <main>
@@ -35,9 +38,10 @@
             <button type="button" class="button">Заказать услугу</button>
         </section>
         <!-- First section  -->
-        <section>
-            <h2 class="section-title">Наши преимущества</h2>
-            <ul class="description">
+        <section class="section description">
+            <div class="container">
+            <h2 class="section-title display-none">Наши преимущества</h2>
+            <ul>
                 <li>
                     <h3 class="title">Внимание к деталям</h3>
                     <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -55,18 +59,22 @@
                     <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <!-- Second section -->
-        <section class="section">
+        <section class="section photo">
+            <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul>
                 <li><img src="./image/eff34a388bbc6409758a002e5a58c3ca(1).jpg" alt="Компьютер" width="370"></li>
                 <li><img src="./image/(2)fe209b7db875477ca0f844823574082d.jpg" alt="Телефон" width="370"></li>
                 <li><img src="./image/(3)ff490664ba91f138b9f708e01d65306a.jpg" alt="Планшет" width="370"></li>
             </ul>
+        </div>
         </section>
         <!-- Third section -->
         <section class="section team">
+            <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul>
                 <li>
@@ -90,10 +98,12 @@
                     <p class="text">UI Designer</p>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <!-- Footer -->
 <footer>
+    <div class="container">
     <a href="#" class="logo-footer">Web<span class="footer-span">Studio</span></a>
     <address>
         <ul>
@@ -102,6 +112,7 @@
             <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 
