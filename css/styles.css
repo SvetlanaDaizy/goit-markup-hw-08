@@ -278,10 +278,6 @@ a {
     margin-right: 0;
 }
 
-.photo .link {
-    background-color: aqua;
-}
-
 .photo .border {
     padding-left: 24px;
     border: 1px solid #EEEEEE;
@@ -357,7 +353,6 @@ a {
     margin-top: 0;
     margin-bottom: 0;
 
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -390,7 +385,9 @@ a {
 .photo-team .item {
     width: 270px;
     background-color: var(--hero-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -411,7 +408,6 @@ a {
 }
 
 .section .title {
-
     color: var(--base-text-color);
 
     font-weight: 700;
