@@ -256,7 +256,6 @@ a {
 .photo  {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
 } 
 
 .photo-container {
@@ -267,7 +266,7 @@ a {
     background-color: var(--hero-color);
 }  
 
-.photo-container:nth-last-child(3) {
+.photo-container:nth-last-child(-n + 3) {
     padding-bottom: 0;
 }
 
