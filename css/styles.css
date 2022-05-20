@@ -48,19 +48,22 @@ a {
 
 /* header */
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .container {
     margin: 0 auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato; 
 }
 
 .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #ECECEC;
 }
 
 .nav {
@@ -277,7 +280,9 @@ a {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .photo .title {
@@ -357,6 +362,10 @@ a {
 
 .photo .section-title {
     margin-bottom: 50px;
+}
+
+.section .photo {
+    margin-right: 0;
 }
 
 .photo-work {
