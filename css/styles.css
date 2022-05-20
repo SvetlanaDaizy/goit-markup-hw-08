@@ -57,7 +57,7 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato; 
+    /* outline: 2px solid tomato;  */
 }
 
 .header-nav {
@@ -81,19 +81,19 @@ a {
     line-height: 1.2;
 }
 
-.logo-header:hover,
+/* .logo-header:hover,
 .logo-header:focus {
     color: var(--base-text-color);
-}
+} */
 
 .header-span {
     color: var(--base-text-color);
 }
 
-.header-span:hover,
+/* .header-span:hover,
 .header-span:focus {
     color: var(--accent-color);
-}
+} */
 
 /* Site-nav */
 
@@ -204,6 +204,7 @@ a {
     display: inline-block;
     padding: 6px 22px;
     border-radius: 4px;
+    border: none;
 
     background-color: #F5F4FA;;
     color: var(--base-text-color);
@@ -266,6 +267,10 @@ a {
     background-color: var(--hero-color);
 }  
 
+.photo-container img {
+    display: block;
+}
+
 .photo-container:nth-last-child(-n + 3) {
     padding-bottom: 0;
 }
@@ -279,9 +284,7 @@ a {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
 }
 
 .photo .title {
@@ -422,6 +425,7 @@ a {
 }
 
 .section .title {
+    margin-top: 0;
     color: var(--base-text-color);
 
     font-weight: 700;
@@ -448,7 +452,6 @@ a {
 
 .footer a {
     display: inline-block;
-   
 }
 
 .logo-footer {
@@ -462,19 +465,19 @@ a {
     line-height: 1.2;
 }
 
-.logo-footer:hover,
+/* .logo-footer:hover,
 .logo-footer:focus {
     color: var(--hero-color);
-}
+} */
 
 .footer-span {
     color: var(--hero-color);
 }
 
-.footer-span:hover,
+/* .footer-span:hover,
 .footer-span:focus {
     color: var(--accent-color);
-}
+} */
 
 address {
     font-style: normal;
@@ -485,7 +488,6 @@ address {
 
 .address {
     color: var(--hero-color);
-
 }   
 
 .address:hover,
@@ -493,10 +495,13 @@ address {
     color: var(--accent-color);
 }
 
+/* .footer .link {
+    margin-bottom: 9px;
+}  */
 
 .footer .item:not(:last-child) {
-    padding-bottom: 9px;
-}
+    margin-bottom: 9px;
+}  
 
 address .link {
     color: rgba(255, 255, 255, 0.6);
@@ -506,5 +511,4 @@ address .link:hover,
 address .link:focus {
     color: var(--accent-color);
 }
-
 
