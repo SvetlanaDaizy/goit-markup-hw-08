@@ -437,7 +437,7 @@ a {
 }
 
 
-.sprite {
+.team .sprite {
     display: flex;
     padding: 0;
     align-items: center;
@@ -445,7 +445,7 @@ a {
     margin-bottom: 30px;
 }
 
-.button-icon {
+.team .button-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -454,11 +454,11 @@ a {
     border-radius: 50%;
 }
 
-.button-icon:not(:last-child) {
+.team .button-icon:not(:last-child) {
     margin-right: 10px;
 }
 
-.button-icon:hover {
+.team .button-icon:hover {
     background-color: var(--accent-color);
 }
 
@@ -470,6 +470,45 @@ a {
     padding-top: 94px;
 }
 
+.client .section-title {
+    margin-bottom: 50px;
+}
+
+.clients-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 94px;
+   
+}
+
+.client .button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client .button-icon:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.client-icon {
+     fill: #afb1b8;
+}
+
+.client-icon:hover {
+    fill: var(--accent-color);
+}
+
+.client .client-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Footer */
 

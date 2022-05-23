@@ -55,4 +55,4 @@ html {
     width: 10px;
     height: 16px;
 
-- 
+- fill="#afb1b8" fill="#afb1b8" style="fill:var(--color1, #afb1b8)
