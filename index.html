@@ -25,8 +25,21 @@
             </ul>
         </nav>
         <ul class="auth">
-            <li class="item"><a href="mailto:info@devstudio.com" class="auth-link auth-mail">info@devstudio.com</a></li>
-            <li class="item"><a href="tel:+380961111111" class="auth-link auth-tel">+38 096 111 11 11</a></li>
+           
+            <li class="item">
+                 <div class="sprite">
+                <svg class="icon" width="20" height="16">
+                    <use href="./image/icons1.svg#icon-email"></use>
+                </svg>
+            </div>
+                <a href="mailto:info@devstudio.com" class="auth-link auth-mail">info@devstudio.com</a></li>
+            <li class="item">
+                <div class="sprite">
+                    <svg class="icon" width="14" height="20">
+                        <use href="./image/icons1.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <a href="tel:+380961111111" class="auth-link auth-tel">+38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
@@ -42,45 +55,48 @@
             <div class="container">
             <h2 class="section-title display-none">Наши преимущества</h2>
             <ul>
+
                 <li class="item">
 
-
-                    <div>
-                        <svg>
-                            <use></use>
+                    <div class="sprite">
+                        <svg class="icon" width="65.32" height="70">
+                            <use href="./image/icons1.svg#icon-antenna"></use>
                         </svg>
                     </div>
 
                     <h3 class="description-title">Внимание к деталям</h3>
                     <p class="description-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
+                </li> 
+
                 <li class="item">
 
-                    <div>
-                        <svg>
-                            <use></use>
+                    <div class="sprite">
+                        <svg class="icon" width="66.96" height="70">
+                            <use href="./image/icons1.svg#icon-clock"></use>
                         </svg>
                     </div>
 
                     <h3 class="description-title" >Пунктуальность</h3>
                     <p class="description-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
+
                 <li class="item">
 
-                    <div>
-                        <svg>
-                            <use></use>
+                    <div class="sprite">
+                        <svg class="icon" width="70" height="53.69">
+                            <use href="./image/icons1.svg#icon-diagram"></use>
                         </svg>
                     </div>
                     
                     <h3 class="description-title">Планирование</h3>
                     <p class="description-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
+
                 <li class="item">
 
-                    <div>
-                        <svg>
-                            <use></use>
+                    <div class="sprite">
+                        <svg class="icon" width="70" height="70">
+                            <use href="./image/icons1.svg#icon-astronaut"></use>
                         </svg>
                     </div>
 
@@ -254,14 +270,39 @@
     </main>
     <!-- Footer -->
 <footer class="footer">
-    <div class="container">
+    <div class="container connection">
+
+        <div class="connection-div">
     <a href="#" class="logo-footer">Web<span class="footer-span">Studio</span></a>
     <address>
         <ul>
             <li class="item"><a href="#" class="link address">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li class="item"><a href="mailto:info@example.com" class="link mail">info@example.com</a></li>
             <li class="item"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
-        </ul>
+        </ul></div>
+
+        <div class="connection-messenger">
+            <h3>присоединяйтесь</h3>
+            <div class="sprite-messenger">
+               
+                <a class="button-icon" href="#">
+                    <svg class="team-icon instagram" width="20" height="20">
+                    <use href="./image/icons1.svg#icon-instagram"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon twitter" width="20" height="16.25">
+                    <use href="./image/icons1.svg#icon-twitter"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon facebook" width="10" height="20">
+                    <use href="./image/icons1.svg#icon-facebook"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon linkedin" width="20" height="20">
+                    <use href="./image/icons1.svg#icon-linkedin"></use>
+                    </svg></a>
+            </div>
+        </div>
     </address>
     </div>
 </footer>

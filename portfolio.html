@@ -14,22 +14,37 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container header-nav">
-            <nav class="nav">
-                <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
-                <ul class="site-nav">
-                    <li class="item"><a href="./index.html" class="nav-link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-                    <li class="item"><a href="#" class="nav-link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="auth">
-                <li class="item"><a href="mailto:info@devstudio.com" class="auth-link auth-mail">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="auth-link auth-tel">+38 096 111 11 11</a></li>
+<header class="header">
+    <div class="container header-nav">
+        <nav class="nav">
+            <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
+            <ul class="site-nav">
+                <li class="item"><a href="./index.html" class="nav-link">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+                <li class="item"><a href="#" class="nav-link">Контакты</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="auth">
+
+            <li class="item">
+                <div class="sprite">
+                    <svg class="icon" width="20" height="16">
+                        <use href="./image/icons1.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <a href="mailto:info@devstudio.com" class="auth-link auth-mail">info@devstudio.com</a>
+            </li>
+            <li class="item">
+                <div class="sprite">
+                    <svg class="icon" width="14" height="20">
+                        <use href="./image/icons1.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <a href="tel:+380961111111" class="auth-link auth-tel">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+</header>
     <!-- Main -->
 <main>
     <section class="main">
@@ -118,8 +133,10 @@
     </section>
 </main>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+<footer class="footer">
+    <div class="container connection">
+
+        <div class="connection-div">
             <a href="#" class="logo-footer">Web<span class="footer-span">Studio</span></a>
             <address>
                 <ul>
@@ -127,9 +144,33 @@
                     <li class="item"><a href="mailto:info@example.com" class="link mail">info@example.com</a></li>
                     <li class="item"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
                 </ul>
-            </address>
         </div>
-    </footer>
+
+        <div class="connection-messenger">
+            <h3>присоединяйтесь</h3>
+            <div class="sprite-messenger">
+
+                <a class="button-icon" href="#">
+                    <svg class="team-icon instagram" width="20" height="20">
+                        <use href="./image/icons1.svg#icon-instagram"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon twitter" width="20" height="16.25">
+                        <use href="./image/icons1.svg#icon-twitter"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon facebook" width="10" height="20">
+                        <use href="./image/icons1.svg#icon-facebook"></use>
+                    </svg></a>
+                <a class="button-icon" href="#">
+                    <svg class="team-icon linkedin" width="20" height="20">
+                        <use href="./image/icons1.svg#icon-linkedin"></use>
+                    </svg></a>
+            </div>
+        </div>
+        </address>
+    </div>
+</footer>
 </body>
     
 </html>
