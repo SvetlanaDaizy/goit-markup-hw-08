@@ -32,3 +32,27 @@ html {
     margin-right: auto;
     width: 1170px;)
 - создаем flex
+
+- работа с before and after:
+
+.auth-link::before {
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    background-color: var(--hero-color); 
+}
+
+    .auth-mail::before {
+    background-image: url(../image/icons.svg/email.svg);
+    width: 16px;
+    height: 12px;
+} 
+
+    .auth-tel::before {
+    background-image: url(../image/icons.svg/tel.svg);
+    width: 10px;
+    height: 16px;
+
+- 
