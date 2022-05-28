@@ -773,7 +773,7 @@ address .link:focus {
 
     width: 528px;
     height: 581px;
-    background-color: var(--hero-color);
+    background-color: var(--hero-color);  
 }
 
 .backdrop.is-hidden {
@@ -793,9 +793,6 @@ address .link:focus {
     background-color: var(--hero-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;   
 
     background-image: url(../image/icons.svg/close-button/close-black.svg);
     background-position: center;
