@@ -18,12 +18,14 @@
         <div class="container header-nav">
         <nav class="nav">
             <a href="#" class="logo-header">Web<span class="header-span">Studio</span></a>
+            
             <ul class="site-nav">
                 <li class="item"><a href="./index.html" class="nav-link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
                 <li class="item"><a href="#" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
+
         <ul class="auth">
            
             <li class="item sprite">
@@ -47,7 +49,7 @@
         <!-- Hero-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- First section  -->
         <section class="section description">
@@ -110,9 +112,22 @@
             <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="photo-work">
-                <li class="item"><img src="./image/eff34a388bbc6409758a002e5a58c3ca(1).jpg" alt="Компьютер" width="370"></li>
-                <li class="item"><img src="./image/(2)fe209b7db875477ca0f844823574082d.jpg" alt="Телефон" width="370"></li>
-                <li class="item"><img src="./image/(3)ff490664ba91f138b9f708e01d65306a.jpg" alt="Планшет" width="370"></li>
+
+                <li class="item">
+                    <img src="./image/eff34a388bbc6409758a002e5a58c3ca(1).jpg" alt="Компьютер" width="370">
+                    <p class="text">Десктопные приложения</p>
+                </li>
+                   
+                <li class="item">
+                    <img src="./image/(2)fe209b7db875477ca0f844823574082d.jpg" alt="Телефон" width="370">
+                    <p class="text">Мобильные приложения</p>
+                </li>
+
+                <li class="item">
+                    <img src="./image/(3)ff490664ba91f138b9f708e01d65306a.jpg" alt="Планшет" width="370">
+                    <p class="text">Дизайнерские решения</p>
+                </li>
+
             </ul>
         </div>
         </section>
@@ -303,8 +318,18 @@
         </div>
     </div>
 </footer>
-</body>
 
+<!-- Modal window -->
+
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<button class="modal-button" type="button" data-modal-close >
+</button>
+</div></div>
+
+<script src="./js/modal.js"></script>
+
+</body>
 </html>
 
 

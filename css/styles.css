@@ -96,6 +96,8 @@ a {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -104,12 +106,31 @@ a {
 
 .current {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current:hover,
 .current:focus {
-    color: var(--base-text-color);
+    color: var(--accent-color);
 }
+
+.site-nav .current {
+    position: relative;
+}
+
+.site-nav .current::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px; 
+   
+}
+
 
  /* Auth */
 
@@ -138,6 +159,8 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth .icon {
@@ -213,6 +236,9 @@ a {
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover,
@@ -264,8 +290,11 @@ a {
     padding-bottom: 30px;
     margin-bottom: 30px;
     
+    
     background-color: var(--hero-color);
     border: 1px solid #EEEEEE;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .photo-container:hover {
@@ -276,6 +305,7 @@ a {
 
 .photo-container img {
     display: block;
+    
 }
 
 .photo-container:nth-last-child(-n + 3) {
@@ -316,8 +346,46 @@ a {
     line-height: 1.9;
 }
 
-/* First section */
 
+.product-thumb {
+    position: relative;
+    overflow: hidden; 
+} 
+ 
+.product-overlay {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+} 
+
+ .photo-container:hover .product-overlay {
+    transform: translateY(0);
+} 
+
+.text-overlay {
+    display: flex;
+    position: absolute;
+    width: 322px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    color: var(--hero-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* First section */
 
 .display-none {
     display: none;
@@ -396,9 +464,39 @@ a {
 }
 
 .photo-work .item {
+    position: relative;
     display: block;
     max-width: 100%;
-    height: auto;
+    height: auto; 
+}
+
+
+.photo-work .item::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    left: 0;
+}
+
+.photo-work img {
+    display: block;
+}
+
+.photo-work .text {
+    position: absolute;
+    bottom: 27px;
+    left: 83px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--hero-color);
 }
 
 
@@ -478,6 +576,9 @@ a {
     border-radius: 50%;
     color: #AFB1B8;
     background-color: var(--hero-color) ;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .button-icon:not(:last-child) {
@@ -524,6 +625,8 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #afb1b8;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client .button-icon:hover {
@@ -535,9 +638,7 @@ a {
      fill: currentColor;
 }
 
-/* .client-icon:hover {
-    
-} */
+
 
 .client .client-item:not(:last-child) {
     margin-right: 30px;
@@ -583,6 +684,8 @@ address {
 
 .address {
     color: var(--hero-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 
 .address:hover,
@@ -597,6 +700,10 @@ address {
 
 .mail, .tel {
     color: rgba(255, 255, 255, 0.6);
+}
+
+address .link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address .link:hover,
@@ -628,6 +735,7 @@ address .link:focus {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sprite-messenger .button-icon:hover {
@@ -639,9 +747,60 @@ address .link:focus {
 }
 
 .connection-messenger .sprite-messenger {
-    display: flex; 
+    display: flex;  
 } 
 
 .sprite-messenger .team-icon {
     fill: var(--hero-color);
 }
+
+/* < !-- Modal window --> */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--hero-color);
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    
+    background-color: var(--hero-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    background-image: url(../image/icons.svg/close-button/close-black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
