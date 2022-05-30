@@ -295,6 +295,7 @@
             <li class="item"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
         </ul>
         </address></div>
+
         <div class="connection-messenger">
             <h3>присоединяйтесь</h3>
             <ul class="sprite-messenger">
@@ -315,7 +316,23 @@
                     <use href="./image/icons1.svg#icon-linkedin"></use>
                     </svg></a></li>
                 </ul>
-        </div>
+            </div>
+
+            <div class="footer-email">
+                <form>
+
+                    <label class="footer-label" for="email">Подпишитесь на рассылку</label>
+                    <div class="telegram-button">
+                    <input class ="footer-input" type="email" name="email" id="email" placeholder="E-mail"/>
+                    
+                    <button class="footer-button" type="submit">Подписаться
+                        <svg width="24" height="24">
+                            <use href="./image/icons1.svg#icon-telegram"></use>
+                        </svg>
+                    </button></div>
+
+                </form>
+            </div>
     </div>
 </footer>
 
@@ -324,8 +341,59 @@
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button class="modal-button" type="button" data-modal-close >
+    <svg class="button-close" width="11" height="11">
+        <use href="./image/icons1.svg#icon-close-black">
+        </use>
+    </svg>
 </button>
-</div></div>
+<form class="form-field">
+    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+    
+    <ul>
+
+        <li> 
+            <label class="topic-options" for="name">Имя</label>
+            <input class="topic-input" type="text" name="name" id="name" placeholder=" "/>
+            <svg class="modal-icon" width="12" height="12">
+                <use href="./image/icons1.svg#icon-name">   
+                </use>
+            </svg>
+        </li>
+
+        <li>
+            <label class="topic-options" for="tel">Телефон</label>
+            <input  class="topic-input" type="text" name="tel" id="tel"/>
+            <svg class="modal-icon" width="13" height="13">
+                <use href="./image/icons1.svg#icon-telefon"></use>
+            </svg>
+        
+        </li>
+
+        <li>
+            <label class="topic-options" for="form-email">Почта</label>
+            <input class="topic-input" type="text" name="email" id="form-email"/>
+        <svg class="modal-icon" width="15" height="12">
+            <use href="./image/icons1.svg#icon-email2"></use>
+        </svg>
+        </li>
+
+    </ul>
+
+    <label class="topic-options" for="comment">Комментарий</label>
+    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+    
+    <label class="label-terms" >
+    <input class="check-input" type="checkbox" name="terms" />
+    <span class="check-box"></span>
+    Соглашаюсь с рассылкой и принимаю 
+    <a class="treaty-terms" href="#">Условия договора</a></label>
+    
+    <div class="submit-button">
+    <button type="submit">Отправить</button></div>
+
+</form>
+
+</div></div> 
 
 <script src="./js/modal.js"></script>
 
