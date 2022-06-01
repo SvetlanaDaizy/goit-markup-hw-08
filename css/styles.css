@@ -768,8 +768,7 @@ address .link:focus {
     width: 358px;
     height: 50px;
     margin-right: 12px;
-    padding: 0;
-    padding-left: 16px;
+    padding: 0 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -807,6 +806,7 @@ address .link:focus {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .telegram-button {
@@ -872,9 +872,6 @@ address .link:focus {
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -954,6 +951,11 @@ address .link:focus {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.form-field textarea:hover,
+.form-field textarea:focus {
+    border: 1px solid #2196F3;
+}
+
 .label-terms {
     display: flex;
     align-items: center;
@@ -968,7 +970,7 @@ address .link:focus {
 }
 
 .label-terms a {
-   padding-left: 3px; 
+   margin-left: 3px; 
 }
 
 .treaty-terms {
@@ -977,9 +979,7 @@ address .link:focus {
 }
 
 .submit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .form-field button {
