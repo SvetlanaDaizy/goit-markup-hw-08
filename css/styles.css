@@ -911,6 +911,7 @@ address .link:focus {
 .topic-input:hover,
 .topic-input:focus {
     border: 1px solid #2196F3;
+    outline: none;
 }  
 
 .form-field li {
@@ -954,6 +955,7 @@ address .link:focus {
 .form-field textarea:hover,
 .form-field textarea:focus {
     border: 1px solid #2196F3;
+    outline: none;
 }
 
 .label-terms {
@@ -980,6 +982,7 @@ address .link:focus {
 
 .submit-button {
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .form-field button {
