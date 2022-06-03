@@ -37,11 +37,19 @@ a {
     text-decoration: none;
 }
 
+.section {
+    padding-bottom: 94px;
+}
 
-/* header */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--base-text-color);
 
-.header {
-    border-bottom: 1px solid #ECECEC;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .container {
@@ -51,7 +59,13 @@ a {
     padding-right: 15px;
 }
 
-.header-nav {
+/* header */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +76,7 @@ a {
     align-items: center;
 }
 
-.logo-header {
+.nav__logo {
     color: var(--accent-color);
     margin-right: 93px;
 
@@ -72,7 +86,7 @@ a {
     line-height: 1.2;
 }
 
-.header-span {
+.nav__logo--span {
     color: var(--base-text-color);
 }
 
@@ -82,11 +96,11 @@ a {
     display: flex;
 }
   
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-link {
+.site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,25 +114,23 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover {
+.site-nav__link:hover {
     color: var(--accent-color);
 }
 
-.current {
+.site-nav__link--current {
+    position: relative;
     color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current:hover,
-.current:focus {
+.site-nav__link--current:hover,
+.site-nav__link--current:focus {
     color: var(--accent-color);
 }
 
-.site-nav .current {
-    position: relative;
-}
 
-.site-nav .current::after {
+.site-nav__link--current::after {
     display: inline-block;
     content: "";
     position: absolute;
@@ -138,16 +150,16 @@ a {
     display: flex;
 }
 
-.auth .item {
+.auth__item {
     display: flex;
     align-items: center;
 }
 
-.auth .item:not(:last-child) {
+.auth__item:not(:last-child) {
      margin-right: 50px; 
 }
 
-.auth-link {
+.auth__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -163,13 +175,13 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth .icon {
+.auth__icon {
     display: block;
     fill: currentColor;
     margin-right: 10px;
 }
 
-.auth-link:hover {
+.auth__link:hover {
     color: var(--accent-color);
 }
 
@@ -193,7 +205,7 @@ a {
     background-position: center;
 }
 
-.hero-title {
+.hero__title {
     margin: 0 auto 30px;
     width: 696px;
     color: var(--hero-color);
@@ -207,7 +219,7 @@ a {
 
 /* buttons - filters */
 
-.button {
+.hero__button {
     display: inline-block;
     padding: 10px 32px;
     border-radius: 4px;
@@ -221,6 +233,8 @@ a {
     line-height: 1.9;
     cursor: pointer;
 }
+
+ /* filter portfolio  */
 
 .filter {
     display: inline-block;
@@ -247,15 +261,8 @@ a {
     color: var(--hero-color);
 }
 
-.section {
-    padding-bottom: 94px;   
-}
-
 /* Portfolio */
 
-.main {
-    background-color: #FFFFFF;
-}
 
 .section-filter {
     padding-top: 94px;
@@ -391,32 +398,20 @@ a {
     display: none;
 }
 
-.section.description {
+.section-description {
     padding-top: 94px;
 }
 
-
-.section-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--base-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-}
-
-.description ul {
+.section-description__list {
     display: flex;
     justify-content: space-between;
 } 
 
-.description .item {
+.section-description__item {
     width: 270px;
 }
 
-.description .sprite {
+.section-description__sprite {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,7 +422,7 @@ a {
 }
 
 
-.description-title {
+.section-description__title {
     color: var(--base-text-color);
     margin-top: 0;
     margin-bottom: 10px;
@@ -438,7 +433,7 @@ a {
     text-transform: uppercase;
 }
 
-.description-text {
+.section-description__text {
     color: var(--base-text-color);
     margin-top: 0;
     margin-bottom: 0;
@@ -450,37 +445,37 @@ a {
 
 /* Second section */
 
-.photo .section-title {
-    margin-bottom: 50px;
-}
-
-.section .photo {
+.section-photo {
     margin-right: 0;
 }
 
-.photo-work {
+.section-photo .section-title {
+    margin-bottom: 50px;
+}
+
+.section-photo__work {
     display: flex;
     justify-content: space-between;
 }
 
-.photo-work .item {
+.section-photo__item {
     position: relative;
     display: block;
     max-width: 100%;
     height: auto; 
 }
 
-
-.photo-work img {
+.section-photo__item img {
     display: block;
 }
 
-.photo-work .text {
+.section-photo__text {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 70px;
+    margin: 0;
 
     font-weight: 700;
     font-size: 14px;
@@ -498,17 +493,17 @@ a {
 
 /* Third section */
 
-.team {
+.section-team {
     background-color: #F5F4FA;
     text-align: center;
-    padding-top: 94px;
+    padding-top: 94px; 
 }
 
-.team .section-title {
+.section-team .section-title {
     margin-bottom: 50px;
 }
 
-.photo-team .item {
+.section-team__item {
     width: 270px;
     background-color: var(--hero-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -517,25 +512,24 @@ a {
     border-radius: 0px 0px 4px 4px;
 }
 
-.photo-team .photo {
+.section-team__photo {
         display: block;
         max-width: 100%;
         height: auto;
         margin-bottom: 30px;
 }
 
-.team .title {
+.section-team__title {
     margin-bottom: 10px;
 }
 
-.photo-team {
+.section-team__photos {
     display: flex;
     justify-content: space-between;
 } 
 
 
-.team .text {
-
+.section-team__text   {
     margin-top: 0;
     margin-bottom: 16px; 
     color: var(--text-color);
@@ -545,7 +539,7 @@ a {
     line-height: 1.7;
 }
 
-.section .title {
+.section-team__title {
     margin-top: 0;
     color: var(--base-text-color);
 
@@ -555,7 +549,7 @@ a {
 }
 
 
-.team .sprite {
+.section-team__sprite {
     display: flex;
     padding: 0;
     align-items: center;
@@ -563,7 +557,7 @@ a {
     margin-bottom: 30px;
 }
 
-.team .button-icon {
+.section-team__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,41 +571,40 @@ a {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team .button-icon:not(:last-child) {
+.section-team__button:not(:last-child) {
     margin-right: 10px;
 }
 
-.team .button-icon:hover {
+.section-team__button:hover {
     color: var(--hero-color);
-    background-color: var(--accent-color);
-   
+    background-color: var(--accent-color);  
 }
 
-.team .team-icon {
+.section-team__icon {
     fill: currentColor; 
 }
 
 /* Fourth section */
 
-.client {
+.section-client {
     text-align: center;
     padding-top: 94px;
     margin-bottom: 94px;
 }
 
-.client .section-title {
+.section-client .section-title {
     margin-bottom: 50px;
 }
 
-.clients-icon {
+.section-client__list {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-   
+
 }
 
-.client .button-icon {
+.section-client__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -625,16 +618,16 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client .button-icon:hover {
+.section-client__button:hover {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 
-.client-icon {
+.section-client__icon {
      fill: currentColor;
 }
 
-.client .client-item:not(:last-child) {
+.section-client__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -646,17 +639,19 @@ a {
     padding-bottom: 60px;
 }
 
-.footer .connection {
+.footer__connection {
     display: flex;
 }
 
-.footer a {
-    display: inline-block;
+/* connection first */
+
+.footer__connection--first {
+    margin-right: 70px;
 }
 
-.logo-footer {
+.footer__logo {
     margin-bottom: 20px;
-
+    display: inline-block;
     color: var(--accent-color);
 
     font-family: Raleway, sans-serif;
@@ -665,51 +660,40 @@ a {
     line-height: 1.2;
 }
 
-.footer-span {
+.footer__span {
     color: var(--hero-color);
 }
 
-address {
+.footer__address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
 
-.address {
+.footer__link {
+   
     color: var(--hero-color);
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 
-.address:hover,
-.address:focus {
-    color: var(--accent-color);
-}
-
-
-.footer .item:not(:last-child) {
+.footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.mail, .tel {
+.footer__link--mail, 
+.footer__link--tel {
     color: rgba(255, 255, 255, 0.6);
 }
 
-address .link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-address .link:hover,
-address .link:focus {
+.footer__link:hover,
+.footer__link:focus {
     color: var(--accent-color);
 }
 
-.connection-div {
-    margin-right: 70px;
-}
+/* connection second */
 
-.connection-messenger h3 {
+.connection-messenger__title {
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -720,7 +704,7 @@ address .link:focus {
     color: #FFFFFF; 
 }
 
-.sprite-messenger .button-icon {
+.connection-messenger__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -732,27 +716,29 @@ address .link:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sprite-messenger .button-icon:hover {
+.connection-messenger__button:hover {
     background-color: var(--accent-color);
 }
 
-.sprite-messenger li:not(:last-child) {
+.connection-messenger__link:not(:last-child) {
     margin-right: 10px;
 }
 
-.connection-messenger .sprite-messenger {
+.connection-messenger__sprite {
     display: flex;  
 } 
 
-.sprite-messenger .team-icon {
+.connection-messenger__team {
     fill: var(--hero-color);
 }
+
+/* connection third  */
 
 .footer-email {
     margin-left: 93px;
 }
 
-.footer-label {
+.footer-email__label {
     display: block;
     margin-bottom: 20px;
 
@@ -764,7 +750,7 @@ address .link:focus {
     color: var(--hero-color);
 }
 
-.footer-input {
+.footer-email__input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -776,7 +762,7 @@ address .link:focus {
     background-color: var(--accent-background);
 }
 
-.footer-input::placeholder {
+.footer-email__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -784,13 +770,13 @@ address .link:focus {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input:not(:placeholder-shown) {
+.footer-email__input:not(:placeholder-shown) {
     background-color: var(--hero-color);
     color: var(--base-text-color);
 }
 
 
-.footer-button {
+.footer-email__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -809,11 +795,11 @@ address .link:focus {
     cursor: pointer;
 }
 
-.telegram-button {
+.footer-email__div {
     display: flex;
 }
 
-.footer-button svg {
+.footer-email__icon {
     margin-left: 10px;
 }
 
@@ -828,7 +814,7 @@ address .link:focus {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.modal {
+.backdrop__modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -847,7 +833,7 @@ address .link:focus {
     pointer-events: none; 
 }
 
-.modal-button {
+.backdrop__button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -863,12 +849,12 @@ address .link:focus {
     cursor: pointer; 
 }
 
-.button-close {
-    fill: currentColor;
+.backdrop__button:hover {
+    color: var(--accent-color);
 }
 
-.modal-button:hover {
-    color: var(--accent-color);
+.backdrop__icon {
+    fill: currentColor;
 }
 
 .form-field {
@@ -877,7 +863,7 @@ address .link:focus {
     padding-right: 40px;
 }
 
-.modal-title {
+.form-field__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.1;
@@ -885,7 +871,7 @@ address .link:focus {
     margin-top: 0;
 }
 
-.topic-options {
+.form-field__label {
     display: block;
     margin-bottom: 4px;
 
@@ -898,7 +884,7 @@ address .link:focus {
 }
 
 
-.topic-input {
+.form-field__input {
     width: 448px;
     height: 40px;
     padding-left: 42px;
@@ -908,18 +894,17 @@ address .link:focus {
     border-radius: 4px;
 }
 
-.topic-input:hover,
-.topic-input:focus {
+.form-field__input:hover,
+.form-field__input:focus {
     border: 1px solid #2196F3;
     outline: none;
 }  
 
-.form-field li {
+.form-field__item {
     position: relative;
 }
 
-
-.form-field .modal-icon {
+.form-field__icon {
     position: absolute;
     top: 32px;
     left: 15px; 
@@ -927,12 +912,12 @@ address .link:focus {
     fill: var(--base-text-color);
 } 
 
-.topic-input:hover + .modal-icon,
-.topic-input:focus + .modal-icon {
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon {
     fill: #2196F3;
 } 
 
-.form-field textarea {
+.form-field__comment {
     width: 448px;
     height: 120px;
     margin-bottom: 20px;
@@ -943,7 +928,7 @@ address .link:focus {
     resize: none;
 }
 
-.form-field textarea::placeholder {
+.form-field__comment::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -952,13 +937,13 @@ address .link:focus {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field textarea:hover,
-.form-field textarea:focus {
+.form-field__comment:hover,
+.form-field__comment:focus {
     border: 1px solid #2196F3;
     outline: none;
 }
 
-.label-terms {
+.form-field__terms {
     display: flex;
     align-items: center;
     padding-left: 2em;
@@ -971,21 +956,18 @@ address .link:focus {
     color: var(--text-color);
 }
 
-.label-terms a {
-   margin-left: 3px; 
-}
 
-.treaty-terms {
+.form-field__treaty {
     color: var(--accent-color);
     text-decoration: underline;
+    margin-left: 3px; 
 }
 
-.submit-button {
+
+
+.form-field__submit {
     margin: 0 auto;
     cursor: pointer;
-}
-
-.form-field button {
     display: block;
     width: 200px;
     height: 50px;
@@ -1005,14 +987,14 @@ address .link:focus {
     color: var(--hero-color);
 }
 
-.check-input {
+.form-field__check {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.check-box {
+.form-field__box {
     display: inline-block;
     position: absolute;
     margin-left: -1.6em;
@@ -1025,7 +1007,7 @@ address .link:focus {
     background-repeat: no-repeat;
 } 
 
-.check-input:checked + .check-box {
+.form-field__check:checked + .form-field__box {
     background-image: url(../image/icons.svg/form/iconcheck.svg);
     background-color: var(--hero-color);
     border-color: var(--accent-color);
