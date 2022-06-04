@@ -1,0 +1,45 @@
+.section-photo {
+    margin-right: 0;
+
+
+& .section-title {
+    margin-bottom: 50px;
+}
+
+&__work {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__item {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+&__item img {
+    display: block;
+}
+
+&__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+
+    font-weight: $second-fw;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $hero-color;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

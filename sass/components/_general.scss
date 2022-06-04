@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $hero-color;
+    color: $base-text-color;
+    font-family: $main-ff;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $base-text-color;
+
+    font-weight: $second-fw;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.display-none {
+    display: none;
+}

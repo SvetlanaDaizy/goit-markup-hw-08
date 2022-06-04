@@ -1,0 +1,45 @@
+
+
+.section-description {
+    padding-top: 94px;
+
+&__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__item {
+    width: 270px;
+}
+
+&__sprite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+&__title {
+    color: $base-text-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: $second-fw;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+&__text {
+    color: $base-text-color;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: $fourth-fw;
+    font-size: 14px;
+    line-height: 1.7;
+}
+}
