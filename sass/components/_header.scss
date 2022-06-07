@@ -1,7 +1,8 @@
-.header {
-    border-bottom: 1px solid #ECECEC;
 
-&__block {
+.header {
+border-bottom: 1px solid #ECECEC;
+
+    &__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,8 +13,7 @@
     display: flex;
     align-items: center;
 
-
-&__logo {
+    &__logo {
     color: $accent-color;
     margin-right: 93px;
 
@@ -22,8 +22,7 @@
     font-size: 26px;
     line-height: 1.2;
 
-
-&--span {
+    &--span {
     color: $base-text-color;
 }
 }
@@ -32,7 +31,7 @@
 /* Site-nav */
 
 .site-nav {
-    display: flex;
+     display: flex;
 
 &__item:not(:last-child) {
     margin-right: 50px;

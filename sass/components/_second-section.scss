@@ -1,14 +1,13 @@
 .section-photo {
     margin-right: 0;
 
-
 & .section-title {
     margin-bottom: 50px;
 }
 
 &__work {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 &__item {
