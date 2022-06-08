@@ -6,9 +6,7 @@ border-bottom: 1px solid #ECECEC;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-    
+   
 }
 }
 
@@ -25,6 +23,10 @@ border-bottom: 1px solid #ECECEC;
     font-size: 26px;
     line-height: 1.2;
 
+    @media screen and (max-width: 767px) {
+        margin: 16px 0;
+    }
+
     &--span {
     color: $base-text-color;
 }
@@ -35,6 +37,10 @@ border-bottom: 1px solid #ECECEC;
 
 .site-nav {
      display: flex;
+
+     @media screen and (max-width: 767px) {
+         display: none;
+     }
 
 &__item:not(:last-child) {
     margin-right: 50px;
@@ -86,6 +92,10 @@ border-bottom: 1px solid #ECECEC;
 
 .auth {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
 &__item {
     align-items: center;

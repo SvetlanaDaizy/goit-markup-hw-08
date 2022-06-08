@@ -44,9 +44,23 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .display-none {
@@ -84,6 +98,11 @@ a {
   font-size: 26px;
   line-height: 1.2;
 }
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    margin: 16px 0;
+  }
+}
 .nav__logo--span {
   color: #212121;
 }
@@ -93,6 +112,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -138,6 +162,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .auth {
+    display: none;
+  }
 }
 .auth__item {
   -webkit-box-align: center;
@@ -211,19 +240,37 @@ a {
   cursor: pointer;
 }
 
-.section-description {
-  padding-top: 94px;
+@media screen and (max-width: 767px) {
+  .section-description {
+    padding-top: 60px;
+  }
 }
-.section-description__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .section-description {
+    padding-top: 94px;
+  }
 }
-.section-description__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .section-description__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-description__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-description__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-description__item {
+    width: 270px;
+  }
 }
 .section-description__sprite {
   display: -webkit-box;
@@ -260,6 +307,11 @@ a {
 
 .section-photo {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .section-photo {
+    display: none;
+  }
 }
 .section-photo .section-title {
   margin-bottom: 50px;
@@ -315,7 +367,7 @@ a {
   margin-bottom: 50px;
 }
 .section-team__item {
-  width: 270px;
+  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -330,13 +382,15 @@ a {
 .section-team__title {
   margin-bottom: 10px;
 }
-.section-team__photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .section-team__photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .section-team__text {
   margin-top: 0;
@@ -407,13 +461,30 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .section-client__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-client__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-client__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: calc((100% - 180px) / 6);
+  }
+  .section-client__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .section-client__button {
   display: -webkit-box;
@@ -441,19 +512,11 @@ a {
 .section-client__icon {
   fill: currentColor;
 }
-.section-client__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer__connection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .footer__connection--first {
   margin-right: 70px;

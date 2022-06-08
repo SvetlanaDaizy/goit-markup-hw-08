@@ -1,0 +1,14 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="icon-icon-close" viewBox="0 0 32 32">
+      <path d="M31.439 3.166 28.273 0 15.72 12.553 3.167 0 .001 3.166l12.553 12.553L.001 28.272l3.166 3.166L15.72 18.885l12.553 12.553 3.166-3.166-12.553-12.553L31.439 3.166z"/>
+    </symbol>
+    <symbol id="icon-icon-menu" viewBox="0 0 48 32">
+      <path d="M0 5.333V0h48v5.333H0zm0 13.334h48v-5.333H0v5.333zM0 32h48v-5.333H0V32z"/>
+    </symbol>
+    <symbol id="icon-icon-check" viewBox="0 0 34 32">
+      <path fill="#2196f3" style="fill:var(--color1, #2196f3)" d="M4.267 0h25.6a4.267 4.267 0 0 1 4.267 4.267v23.467a4.267 4.267 0 0 1-4.267 4.267h-25.6A4.267 4.267 0 0 1 0 27.734V4.267A4.267 4.267 0 0 1 4.267 0z"/>
+      <path fill="#fff" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)" stroke="#fff" stroke-width=".427" d="m8.442 16.538-.147-.141-.147.139-2.057 1.95.162.156 7.605 7.253.147-.141 16.171-15.426-.162-.154-2.029-1.935-.147.141-13.98 13.325-5.417-5.167z"/>
+    </symbol>
+  </defs>
+</svg>
