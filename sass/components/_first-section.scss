@@ -2,8 +2,9 @@
 
 .section-description {
 
-    @media  screen and (max-width: 767px) {
+    @media  screen and (min-width: 480px) {
         padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
@@ -45,13 +46,18 @@
 
 &__title {
     color: $base-text-color;
-    margin-top: 0;
-    margin-bottom: 10px;
-
+    
     font-weight: $second-fw;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (max-width: 786px) {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
 }
 
 &__text {
