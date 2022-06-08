@@ -11,10 +11,10 @@
     }
 
 &__list {
-// display: flex;
-// justify-content: space-between;  
-@media screen and (min-width: 768px)  {
+
+    @media screen and (min-width: 768px)  {
     display: flex;
+    flex-wrap: wrap;
 }
 }
 
@@ -22,11 +22,10 @@
 
     @media screen and (min-width: 480px) {
         width: 450px;
-        // justify-content: space-between;
     }
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
+        width: 354px;
 
         }
      @media screen and (min-width: 1200px) {
@@ -58,7 +57,7 @@
 &__text {
     color: $base-text-color;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     font-weight: $fourth-fw;
     font-size: 14px;
