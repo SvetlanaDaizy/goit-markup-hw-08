@@ -687,7 +687,7 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .section-client__item {
     width: 210px;
   }
