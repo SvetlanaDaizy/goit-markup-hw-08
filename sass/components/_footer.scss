@@ -10,7 +10,7 @@
 
 &__connection {
 
-    @media screen and (min-width) {
+    @media screen and (min-width: 1200px) {
         display: flex;
     }
      
@@ -19,6 +19,17 @@
     @media  screen and (min-width: 1200px) {
         margin-right: 70px;
     }  
+}
+
+&--tabletka {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+    }
+         @media screen and (min-width: 1200px) {
+             display: flex;
+         }
+
 }
 }
 
@@ -42,6 +53,10 @@
     font-weight: $fourth-fw;
     font-size: 14px;
     line-height: 1.7;
+
+    @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+        }   
 }
 
 &__link {
@@ -69,6 +84,11 @@
 /* connection second */
 
 .connection-messenger {
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+        }
+           
 
 &__title {
     margin-top: 0;
@@ -104,6 +124,10 @@
 
 &__sprite {
     display: flex;
+
+@media screen and (min-width: 480px) {
+       justify-content: center;
+    }
 }
 
 &__team {
@@ -111,11 +135,15 @@
 }
 }
 
+
 /* connection third  */
 
 .footer-email {
-    margin-left: 93px;
-
+    
+    @media screen and (min-width: 1200px) {
+           margin-left: 93px;
+        }
+    
 &__label {
     display: block;
     margin-bottom: 20px;
@@ -129,9 +157,7 @@
 }
 
 &__input {
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
+     height: 50px;  
     padding: 0 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -139,6 +165,15 @@
     border-radius: 4px;
     background-color: $accent-background;
 
+    @media screen and (min-width: 480px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        }
 
 &::placeholder {
     font-weight: $fourth-fw;
@@ -171,10 +206,17 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+            margin: 0 auto;
+        }
 }
 
 &__div {
-    display: flex;
+
+    @media screen and (min-width: 1200px) {
+             display: flex;
+        }  
 }
 
 &__icon {

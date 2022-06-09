@@ -1,5 +1,10 @@
 .section-service {
-    margin-bottom: 94px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+         @media screen and (min-width: 1200px) {
+             margin-bottom: 94px;
+         }
 
 &__photo {
     display: flex;
@@ -7,16 +12,38 @@
 }
 
 &__container {
-    width: 370px;
-    margin-right: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
 
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+
+        &:not(:last-child) {
+        margin-bottom: 30px;  
+        }
+    }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 354px;
+            
+            &:nth-child(odd) {
+                margin-right: 30px;
+            }
+            &:not(:last-child) {
+            margin-bottom: 30px;
+            }
+
+        }
+                @media screen and (min-width: 1200px) {
+                    width: 370px;
+                    margin-right: 30px;
+                    padding-bottom: 30px;
+                    margin-bottom: 30px;
+                }
+    
     background-color: $hero-color;
     border: 1px solid #EEEEEE;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+        
 
 &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -26,15 +53,18 @@
 
 & img {
     display: block;
+    width: 100%;
 }
 
 &:nth-last-child(-n + 3) {
     padding-bottom: 0;
 }
-
-&:nth-child(3n) {
+    @media  screen and (min-width: 1200px) {
+       &:nth-child(3n) {
     margin-right: 0;
-}
+} 
+    }
+
 
 &:hover .section-service__overlay {
     transform: translateY(0);

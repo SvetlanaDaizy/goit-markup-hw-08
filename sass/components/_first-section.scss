@@ -7,7 +7,7 @@
         padding-bottom: 60px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
     }
 
@@ -23,14 +23,27 @@
 
     @media screen and (min-width: 480px) {
         width: 450px;
+
+    &:not(:last-child) {
+    margin-bottom: 30px;
+
+    }         
     }
 
     @media screen and (min-width: 768px) {
         width: 354px;
 
+        &:nth-child(odd) {
+        margin-right: 30px;
         }
+        }
+
      @media screen and (min-width: 1200px) {
         width: 270px;
+
+        &:not(:last-child) {
+                margin-right: 30px;
+            }
         }
 }
 
@@ -46,27 +59,27 @@
 
 &__title {
     color: $base-text-color;
-    
+     margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: $second-fw;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
-        margin-top: 0;
-        margin-bottom: 10px;
     }
 
 }
 
 &__text {
-    color: $base-text-color;
-    margin-top: 0;
-    margin-bottom: 30px;
+    color: $text-color;
+    margin: 0;
+    
 
     font-weight: $fourth-fw;
     font-size: 14px;
-    line-height: 1.7;
+
 }
 }

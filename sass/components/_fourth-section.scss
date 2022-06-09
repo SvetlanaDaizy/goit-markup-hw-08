@@ -7,11 +7,11 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
-        margin-bottom: 94px;
     }
 
 
 & .section-title {
+
     @media screen and (min-width: 480px) {
             margin-bottom: 30px;
         }
@@ -22,20 +22,24 @@
 }
 
 &__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    display: flex; 
     margin: 0 auto;
-   
+
+    @media screen and (max-width: 1199px) { 
+        flex-wrap: wrap;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+         align-items: center;
+    }
 }
 
 &__item {
- 
 
-  @media screen and (min-width: 480px) {
-        width: calc((100% - 4 * 15px) / 2);
-       
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 210px;
+    
         &:nth-child(-n + 4) {
                 margin-bottom: 30px;
             }
@@ -44,12 +48,23 @@
             }
     }
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 6 * 15px) / 3);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+
+        &:nth-child(-n+3) {
+        margin-bottom: 30px;
+        }
+
+        &:not(:nth-child(3n)) {
+        margin-right: 30px;
+        }
+
     } 
+
     @media screen and (min-width: 1200px) {
+        width: 170px;
         justify-content: center;
-        width: calc((100% - 12 * 15px) / 6);
+    
         
         &:not(:last-child) {
             margin-right: 30px;
@@ -64,7 +79,6 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -82,7 +96,5 @@
 &__icon {
     fill: currentColor;
 }
-
-
-
 }
+

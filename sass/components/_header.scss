@@ -6,6 +6,8 @@ border-bottom: 1px solid #ECECEC;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // margin-left: 0;
+    // margin-right: 0;
    
 }
 }
@@ -16,7 +18,7 @@ border-bottom: 1px solid #ECECEC;
 
     &__logo {
     color: $accent-color;
-    margin-right: 93px;
+    
 
     font-family: $second-ff;
     font-weight: $second-fw;
@@ -25,6 +27,14 @@ border-bottom: 1px solid #ECECEC;
 
     @media screen and (max-width: 767px) {
         margin: 16px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
 
     &--span {
@@ -91,34 +101,59 @@ border-bottom: 1px solid #ECECEC;
 /* Auth */
 
 .auth {
-    display: flex;
-
-    @media screen and (max-width: 767px) {
+    
+    @media screen and (max-width: 767px) {  
         display: none;
+        margin-left: 84px;
     }
+        @media screen and (min-width: 768px) {
+            margin-left: 84px;
+        }
+
+    @media screen and (min-width: 1200px) {
+         display: flex;
+    }
+    
 
 &__item {
-    align-items: center;
 
-&:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+        margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+
+    &:not(:last-child) {
     margin-right: 50px;
+}   
 }
 }
 
 &__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: $text-color;
 
     font-weight: $third-fw;
-    font-size: 14px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
     color: $text-color;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
 
 &:hover {
     color: $accent-color;
@@ -128,6 +163,32 @@ border-bottom: 1px solid #ECECEC;
 &__icon {
     display: block;
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 768px) {
+        &--email {
+        width: 16px;
+        height: 12px;
+    }
+        &--tel {
+        width: 12px;
+        height: 16px;
+        }
+    }
+
+       
+    @media screen and (min-width: 1200px) {     
+         margin-right: 10px;
+
+         &--email {
+        width: 18px;
+        height: 14px;
+             }
+        &--tel {
+        width: 14px;
+        height: 18px;
+             }
+        }
 }
 }
+

@@ -30,20 +30,43 @@
 
         @media screen and (min-width: 480px) {
         width: 450px;
+        }
 
+        @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 30px;   
         }
         }
+
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+
         }
 
         @media screen and (min-width: 1200px) {
         width: 270px;
         }
+}
 
+&__photos {
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 &__photo {
@@ -54,21 +77,14 @@
 }
 
 &__title {
+    margin-top: 0;
     margin-bottom: 10px;
-}
+    color: $base-text-color;
 
-&__photos {
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+    font-weight: $second-fw;
+    font-size: 14px;
+    line-height: 1.1;
 }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: space-between;
-    }
-    }
-    
 
 &__text {
     margin-top: 0;
@@ -80,14 +96,6 @@
     line-height: 1.7;
 }
 
-&__title {
-    margin-top: 0;
-    color: $base-text-color;
-
-    font-weight: $second-fw;
-    font-size: 14px;
-    line-height: 1.1;
-}
 
 &__sprite {
     display: flex;
@@ -95,7 +103,6 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-    // margin-bottom: 30px;
 }
 
 &__button {
