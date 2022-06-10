@@ -7,9 +7,11 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &.container {
+        margin: 0;
     }
-   
-    
+    }
      }
 
         
@@ -26,16 +28,8 @@ position: relative;
     font-size: 26px;
     line-height: 1.2;
 
-    @media screen and (max-width: 767px) {
-        margin: 16px 0;
-    }
-
-    @media screen and (min-width: 768px) {
-        margin-right: 88px;
-    }
-
     @media screen and (min-width: 1200px) {
-        margin-right: 93px;
+    margin-left: 215px;
     }
 
     &--span {
@@ -47,11 +41,10 @@ position: relative;
 /* Site-nav */
 
 .site-nav {
-     display: flex;
 
-     @media screen and (max-width: 767px) {
-         display: none;
-     }
+    @media screen and (min-width: 767px) {
+    display: flex;
+    }
 
 &__item:not(:last-child) {
     margin-right: 50px;
@@ -104,14 +97,15 @@ position: relative;
 .auth {
     
     @media screen and (max-width: 767px) {  
-        display: none;
         margin-left: 84px;
     }
         @media screen and (min-width: 768px) {
+           padding-top: 21px;
             margin-left: 84px;
         }
 
     @media screen and (min-width: 1200px) {
+        padding-top: 0;
          display: flex;
     }
     
@@ -166,7 +160,11 @@ position: relative;
     fill: currentColor;
     margin-right: 8px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1199px) {
         &--email {
         width: 16px;
         height: 12px;
