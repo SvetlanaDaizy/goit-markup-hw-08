@@ -79,8 +79,8 @@ a {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .header__block {
@@ -93,61 +93,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media screen and (max-width: 767px) {
-  .header__button {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #ffffff;
-    color: #212121;
-  }
-  .header__button:hover {
-    color: #2196F3;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header__button {
-    display: none;
-  }
-}
-
-.header__button.is-open .header__icon--close {
-  display: block;
-}
-
-.header__button.is-open .header__icon--menu {
-  display: none;
-}
-
-.header__icon {
-  fill: currentColor;
-}
-
-.header__icon--close {
-  display: none;
-}
-
-.header__menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-color: #ffffff;
 }
 
 .nav {
@@ -1081,6 +1026,13 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
 }
 
 .backdrop__modal {
@@ -1089,12 +1041,24 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1481,5 +1445,65 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ffffff;
+    color: #212121;
+  }
+  .header__button:hover {
+    color: #2196F3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__button.is-open .header__icon--close {
+  display: block;
+}
+
+.header__button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__icon {
+  fill: currentColor;
+}
+
+.header__icon--close {
+  display: none;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 733px;
+  background-color: #ffffff;
+}
+
+.header__menu.is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
