@@ -6,14 +6,13 @@ position: relative;
     &__block {   
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    &.container {
-        margin: 0;
-    }
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
     }
      }
-
+    }
         
 
 .nav {
@@ -28,8 +27,12 @@ position: relative;
     font-size: 26px;
     line-height: 1.2;
 
+    @media screen and (max-width: 1199px) {
+    margin-right: 88px;
+    }
+
     @media screen and (min-width: 1200px) {
-    margin-left: 215px;
+    margin-right: 93px;
     }
 
     &--span {
@@ -42,9 +45,16 @@ position: relative;
 
 .site-nav {
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
     display: flex;
     }
+
+    @media  screen and (max-width: 767px) {
+       &__item:not(:last-child) {
+    margin-bottom: 32px;
+    }  
+    }
+
 
 &__item:not(:last-child) {
     margin-right: 50px;
@@ -52,17 +62,27 @@ position: relative;
 
 &__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     color: $base-text-color;
 
     font-weight: $third-fw;
-    font-size: 14px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
-
+    line-height: 1.2;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 767px) {
+    font-size: 40px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    }
+
+   
 &:hover {
     color: $accent-color;
     }
@@ -86,7 +106,12 @@ position: relative;
     left: 0;
     bottom: 0;
     background-color: $accent-color;
-    border-radius: 2px;
+    border-radius: 2px; 
+
+    @media screen and (max-width: 767px) {
+    display: none;
+    }
+   
 }
 }
 }
@@ -97,7 +122,7 @@ position: relative;
 .auth {
     
     @media screen and (max-width: 767px) {  
-        margin-left: 84px;
+        margin: 0;
     }
         @media screen and (min-width: 768px) {
            padding-top: 21px;
@@ -106,12 +131,12 @@ position: relative;
 
     @media screen and (min-width: 1200px) {
         padding-top: 0;
+        margin-left: 300px;
          display: flex;
     }
     
 
 &__item {
-
     @media screen and (max-width: 1199px) {
         &:not(:last-child) {
         margin-bottom: 10px;
@@ -122,7 +147,7 @@ position: relative;
         align-items: center;
 
     &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }   
 }
 }
@@ -137,6 +162,24 @@ position: relative;
     color: $text-color;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--email {
+        @media screen and (max-width: 767px) {
+                font-size: 34px;
+                line-height: 1.18;
+                color: $accent-color;
+                margin-top: 306px;
+                margin-bottom: 32px;
+            }
+    }
+    &--tel {
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            line-height: 1.1;
+            color: $text-color;
+            margin-bottom: 64px;
+            }
+    }
 
     @media screen and (min-width: 768px) {
             font-size: 12px;
@@ -191,4 +234,3 @@ position: relative;
 }
 }
 
-  

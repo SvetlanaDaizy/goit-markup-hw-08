@@ -15,37 +15,60 @@
 <body>
     <!-- Header -->
 <header class="header">
+
     <div class="header__block container">
         <nav class="nav">
             <a href="#" class="nav__logo">Web<span class="nav__logo--span">Studio</span></a>
-    
+        </nav>
+        <button type="button" class="header__button" aria-expanded="false" aria-controls="menu-container"
+            data-menu-button>
+
+            <svg class="header__icon" width="24" height="18" aria-label="Переключатель мобильного меню">
+                <use href="./image/icons1.svg#icon-icon-menu" class="header__icon--menu"></use>
+                <use href="./image/icons1.svg#icon-icon-close" class="header__icon--close"></use>
+            </svg>
+        </button>
+
+        <!-- Content menu -header -->
+        <div class="header__menu" id="menu-container" data-menu>
+
             <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a>
-                </li>
+                <li class="site-nav__item"><a href="./index.html"
+                        class="site-nav__link site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                 <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
             </ul>
-        </nav>
-    
-        <ul class="auth">
-    
-            <li class="auth__item">
-                <a href="mailto:info@devstudio.com" class="auth__link">
-    
-                    <svg class="auth__icon" width="20" height="16">
-                        <use href="./image/icons1.svg#icon-email"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-    
-            <li class="auth__item">
-                <a href="tel:+380961111111" class="auth__link">
-                    <svg class="auth__icon" width="14" height="20">
-                        <use href="./image/icons1.svg#icon-tel"></use>
-                    </svg>+38 096 111 11 11</a>
-            </li>
 
-        </ul>
+
+            <ul class="auth">
+                <li class="auth__item">
+                    <a href="mailto:info@devstudio.com" class="auth__link auth__link--email">
+
+                        <svg class="auth__icon auth__icon--email">
+                            <use href="./image/icons1.svg#icon-email"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+
+                <li class="auth__item">
+                    <a href="tel:+380961111111" class="auth__link auth__link--tel">
+
+                        <svg class="auth__icon auth__icon--tel">
+                            <use href="./image/icons1.svg#icon-tel"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+
+            <ul class="social-network">
+                <li class="social-network__item"><a href="#" class="social-network__link">Instagram</a></li>
+                <li class="social-network__item"><a href="#" class="social-network__link">Twitter</a></li>
+                <li class="social-network__item"><a href="#" class="social-network__link">Facebook</a></li>
+                <li class="social-network__item"><a href="#" class="social-network__link">Linkedin</a></li>
+            </ul>
+
+        </div>
+
     </div>
+
 </header>
     <!-- Main -->
 <main>
@@ -55,13 +78,17 @@
     <section class="section-filter">
         <h2 class="display-none">Filter</h2>
     <div class="section-filter__buttons container">
+    <div class="section-filter__buttons--first">
     <button type="button" class="section-filter__filter">Все</button>
     <button type="button" class="section-filter__filter">Веб-сайты</button>
     <button type="button" class="section-filter__filter">Приложения</button>
+    </div>
+    <div class="section-filter__buttons--second">
     <button type="button" class="section-filter__filter">Дизайн</button>
     <button type="button" class="section-filter__filter">Маркетинг</button>
     </div>
-</section>
+    </div>
+    </section>
     <!-- Photo -->
     <section class="section-service"> 
     <div class="container">
@@ -273,6 +300,7 @@
         </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
     
 </html>

@@ -22,7 +22,6 @@
 &__item {
 
     @media screen and (min-width: 480px) {
-        width: calc(100% - 30px);
 
     &:not(:last-child) {
     margin-bottom: 30px;
@@ -31,7 +30,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
+        width: 354px;
 
         &:nth-child(odd) {
         margin-right: 30px;

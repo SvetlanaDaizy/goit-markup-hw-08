@@ -1,11 +1,30 @@
 .section-filter {
-    padding-top: 94px;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+
+        @media screen and (min-width: 768px) {
+            padding-top: 94px;
+            margin-bottom: 50px;
+        }
 
 &__buttons {
+
+    @media  screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    }
+    
+    @media screen and (max-width: 767px) {
+    &--first {
+        margin-bottom: 15px;
+    }
 }
+    
+}
+
 
 &__filter {
     display: inline-block;
