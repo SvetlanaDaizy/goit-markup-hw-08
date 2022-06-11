@@ -5,12 +5,14 @@
 
     @media screen and (max-width: 1200px) {
         padding-top: 60px;
+        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 
 
 & .section-title {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
             margin-bottom: 30px;
         }
     

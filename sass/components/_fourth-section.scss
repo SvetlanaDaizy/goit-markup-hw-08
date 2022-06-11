@@ -1,8 +1,9 @@
 .section-client {
     text-align: center;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -12,7 +13,7 @@
 
 & .section-title {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
             margin-bottom: 30px;
         }
     
@@ -38,14 +39,15 @@
 &__item {
 
    @media screen and (max-width: 767px) {
-        width: 210px;
+        width: calc((100% - 4 * 15px) / 2);
     
         &:nth-child(-n + 4) {
                 margin-bottom: 30px;
             }
-        &:nth-child(odd) {
-                margin-right: 30px;
-            }
+
+         &:nth-child(odd) {
+          margin-right: 30px;
+         }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
