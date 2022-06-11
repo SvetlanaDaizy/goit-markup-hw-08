@@ -26,6 +26,10 @@ position: relative;
     font-weight: $second-fw;
     font-size: 26px;
     line-height: 1.2;
+    
+    @media screen and (max-width: 767px) {
+        margin: 16px 0;
+    }
 
     @media screen and (max-width: 1199px) {
     margin-right: 88px;
@@ -125,7 +129,6 @@ position: relative;
         margin: 0;
     }
         @media screen and (min-width: 768px) {
-           padding-top: 21px;
             margin-left: 84px;
         }
 

@@ -120,6 +120,12 @@ a {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    margin: 16px 0;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .nav__logo {
     margin-right: 88px;
@@ -221,7 +227,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .auth {
-    padding-top: 21px;
     margin-left: 84px;
   }
 }
@@ -1125,7 +1130,7 @@ a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .backdrop__modal {
     width: 450px;
     height: 609px;
@@ -1205,7 +1210,7 @@ a {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .form-field__input {
     width: 370px;
   }
@@ -1248,7 +1253,7 @@ a {
   resize: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .form-field__comment {
     width: 370px;
   }
