@@ -17,14 +17,23 @@
 
 &__title {
     margin: 0 auto 30px;
-    width: 696px;
     color: $hero-color;
 
     font-weight: $first-fw;
-    font-size: 44px;
-    line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.6;
+        width: 360px;  
+    }
+
+         @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.4;
+            width: 696px;
+         }
 }
 
 

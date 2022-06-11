@@ -85,8 +85,8 @@
 
 .connection-messenger {
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        margin: 60px auto 60px;
         }
            
 
@@ -158,7 +158,7 @@
 }
 
 &__input {
-     height: 50px;  
+    height: 50px;  
     padding: 0 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -168,6 +168,9 @@
 
     @media screen and (min-width: 480px) {
             width: 450px;
+        }
+
+    @media screen and (max-width: 1199px) {
             margin-bottom: 20px;
         }
 
@@ -179,7 +182,7 @@
 &::placeholder {
     font-weight: $fourth-fw;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
 }
@@ -194,7 +197,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
     height: 50px;
   
 
@@ -209,7 +211,11 @@
     border-radius: 4px;
     cursor: pointer;
 
-    @media screen and (max-width: 767px) {
+    @media  screen and (min-width: 480px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 1199px) {
             margin: 0 auto;
         }
 }

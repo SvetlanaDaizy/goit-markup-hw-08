@@ -361,13 +361,26 @@ a {
 
 .hero__title {
   margin: 0 auto 30px;
-  width: 696px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+    width: 696px;
+  }
 }
 
 .hero__button {
@@ -720,6 +733,9 @@ a {
 
 @media screen and (max-width: 1199px) {
   .section-client__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -891,9 +907,9 @@ a {
 }
 
 /* connection second */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .connection-messenger {
-    margin-bottom: 60px;
+    margin: 60px auto 60px;
   }
 }
 
@@ -984,6 +1000,11 @@ a {
 @media screen and (min-width: 480px) {
   .footer-email__input {
     width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-email__input {
     margin-bottom: 20px;
   }
 }
@@ -998,28 +1019,28 @@ a {
 .footer-email__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-email__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-email__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-email__input::placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1038,7 +1059,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -1052,7 +1072,13 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
+  .footer-email__button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer-email__button {
     margin: 0 auto;
   }
@@ -1596,6 +1622,10 @@ a {
 }
 
 .header__button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__button.is-open .nav__logo {
   display: none;
 }
 

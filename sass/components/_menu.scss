@@ -31,6 +31,10 @@
         display: none;
     }
 
+    &.is-open .nav__logo {
+        display: none;
+    }
+
 }
 
 &__icon {
