@@ -13,13 +13,16 @@
 
 &__container {
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 450px;
+    @media screen and (min-width: 480px) {
+     width: 450px;
+    }
 
+        @media screen and (max-width: 767px) {
         &:not(:last-child) {
         margin-bottom: 30px;  
         }
     }
+    
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 354px;
             
