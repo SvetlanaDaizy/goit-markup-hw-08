@@ -12,8 +12,7 @@
     background-position: center;
 
 
-
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(/image/Headerimg-480.jpg);
 
@@ -27,8 +26,8 @@
         }
         }
 
-    @media screen and (min-width: 481px) {
-     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    @media screen and (min-width: 767px) {
+     background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
          url(/image/Headerimg-768.jpg);
 
      @media (min-device-pixel-ratio: 2),
@@ -41,7 +40,7 @@
      }
  }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1199px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
           url(/image/Img.hero.jpg);
 
