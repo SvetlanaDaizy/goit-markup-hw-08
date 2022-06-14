@@ -1,5 +1,5 @@
 .section-service {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
         margin-bottom: 60px;
     }
          @media screen and (min-width: 1200px) {
@@ -17,14 +17,14 @@
      width: 450px;
     }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
     
         &:not(:last-child) {
         margin-bottom: 30px;  
         }
     }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
             width: 354px;
             
             &:nth-child(odd) {
