@@ -1,10 +1,13 @@
 .section-photo {
     margin-right: 0;
     
- @media screen and (max-width: 1199px) {
+ @media screen and (max-width: 1200px) {
     display: none;
     }
-
+    
+@media screen and (min-width: 1200px) {
+    display: block;
+}
    
 & .section-title {
     margin-bottom: 50px;

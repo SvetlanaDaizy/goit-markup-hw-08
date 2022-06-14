@@ -11,7 +11,7 @@
 
 & .section-title {
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
             margin-bottom: 30px;
         }
     
@@ -33,27 +33,39 @@
         width: 450px;
         }
 
-        @media screen and (max-width: 767px) {
-        &:not(:last-child) {
+        @media screen and (max-width: 768px) {
+        
+            &:not(:last-child) {
             margin-bottom: 30px;   
         }
         }
 
     
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 354px;
 
         &:nth-child(odd) {
             margin-right: 30px;
         }
+         &:not(:last-child) {
+        margin-bottom: 0;
+        }
         &:nth-child(-n + 2) {
             margin-bottom: 30px;
         }
-
+        
+       
         }
 
         @media screen and (min-width: 1200px) {
         width: 270px;
+
+        &:nth-child(-n + 2) {
+                margin-bottom: 0;
+            }
+                 &:nth-child(odd) {
+                     margin-right: 0;
+                 }
         }
 }
 
