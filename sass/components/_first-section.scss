@@ -28,8 +28,12 @@
     }         
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
+
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
 
         &:nth-child(odd) {
         margin-right: 30px;

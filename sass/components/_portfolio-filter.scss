@@ -15,12 +15,17 @@
     @media  screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+
+     &--first {
+        margin-right: 8px;
+    }
     }
     
     @media screen and (max-width: 767px) {
     &--first {
         margin-bottom: 15px;
     }
+   
 }
     
 }
@@ -50,8 +55,8 @@
     color: $hero-color;
 }
 
-&:not(:last-child) {
+      &:not(:last-child) {
     margin-right: 8px;
-}
+}  
 }
 }

@@ -3,13 +3,10 @@
 &__button {
 
     @media screen and (max-width: 767px) {
-        // position: absolute;
-        // top: 0;
-        // right: 0;
-        // z-index: 999;
-
-
-    //    display: inline-flex;
+         
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
         padding: 0;
         width: 40px;
@@ -35,8 +32,6 @@
         display: none;
     }
 
-  
-
 }
 
 &__icon {
@@ -53,7 +48,8 @@
     background-color: $hero-color;
     z-index: 999;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
+
     display: none;    
     position: absolute;
     top: 100%;
@@ -72,6 +68,10 @@
 .social-network {
     display: flex;
     margin-top: 32px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
 
     &__link {

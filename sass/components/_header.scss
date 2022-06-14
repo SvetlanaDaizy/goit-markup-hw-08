@@ -28,7 +28,7 @@ position: relative;
     line-height: 1.2;
     
     @media screen and (max-width: 767px) {
-        margin: 16px 0;
+        padding: 16px 0;
     }
 
     @media screen and (max-width: 1199px) {
@@ -220,7 +220,6 @@ position: relative;
         height: 16px;
         }
     }
-
        
     @media screen and (min-width: 1200px) {     
          margin-right: 10px;
@@ -229,6 +228,7 @@ position: relative;
         width: 18px;
         height: 14px;
              }
+
         &--tel {
         width: 14px;
         height: 18px;
