@@ -388,7 +388,7 @@ a {
   .header__button {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 5%;
     z-index: 999;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -435,6 +435,7 @@ a {
 }
 
 .header__menu {
+  z-index: 99;
   background-color: #ffffff;
 }
 
@@ -461,7 +462,6 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 99;
     position: unset;
     height: 100%;
     padding: 0;
